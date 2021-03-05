@@ -1,0 +1,44 @@
+/*  In order to commit use git push -u origin master */
+
+#l1read {
+    color: steelblue;
+}
+
+#l2read {
+    color: steelblue;
+}
+
+#ds1read {
+    color: steelblue;
+}
+
+#ds2read {
+    color: steelblue;
+}
+
+.container {
+    margin-top: 2px;
+}
+
+h2 {
+    margin-top: 16px;
+}
+
+.card-img-top {
+    width: 255px;
+    height: 380px;
+   /* object-fit: cover; */
+}
+
+.col-4 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.card {
+    border-style: none;
+}
+
+.card-body {
+    border-bottom: 4px dotted lightsteelblue;
+}
