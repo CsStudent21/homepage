@@ -8,6 +8,18 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- My Book Page CSS -->
+    <link href="styles.css" rel="stylesheet">
+
+    <!--Script of the blog-->
+    <script>
+      function publish() {
+        document.querySelector("#articleText").value;
+        document.querySelector("#article").innerHTML = document.querySelector("#articleText").value;
+      }
+
+    </script>
+
     <title>Tom Blog</title>
   </head>
   <body>
@@ -42,7 +54,21 @@
       <div class="blog-post">
         <h2 class="blog-post-title">First Post </h2>
         <p class="blog-post-meta">April 25, 2020 by <a href="#">Tom</a></p>
+        <p id = "article"></p>
       </div>
+
+      <form onsubmit = "publish(); return false;">
+        <p>
+          <input id = "title" type = "text">
+        </p>
+        <p>
+          <input id = "articleText" type = "text">
+          <input type= "date">
+        </p>
+        <button>
+          <input type = "submit">
+        </button>
+      </form>
       
   </body>
 </html>
