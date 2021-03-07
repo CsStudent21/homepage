@@ -8,14 +8,15 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- My Book Page CSS -->
-    <link href="styles.css" rel="stylesheet">
+    <!-- My Home Page CSS -->
+    <link href="index.css" rel="stylesheet">
 
     <!--Script of the blog-->
     <script>
       function publish() {
-        document.querySelector("#articleText").value;
+        document.querySelector(".blog-post-title").innerHTML = document.querySelector("#titleText").value;
         document.querySelector("#article").innerHTML = document.querySelector("#articleText").value;
+        document.querySelector(".blog-post-meta").innerHTML = document.querySelector("#dateText").value + " by Tom";
       }
 
     </script>
@@ -31,7 +32,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-            <img src="Bluelogo.jpg" width="30" height="30" alt="Logo">
+            <img id = "logo" src="Bluelogo.jpg" width="30" height="30" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -53,22 +54,22 @@
 
       <div class="blog-post">
         <h2 class="blog-post-title">First Post </h2>
-        <p class="blog-post-meta">April 25, 2020 by <a href="#">Tom</a></p>
+        <p class="blog-post-meta">April 25, 2020 by Tom </p>
         <p id = "article"></p>
       </div>
 
-      <form onsubmit = "publish(); return false;">
-        <p>
-          <input id = "title" type = "text">
-        </p>
-        <p>
+      <!--Area del form di creazione post-->
+      <div>
+        <form onsubmit = "publish(); return false;">
+          <h5> Scrivi il titolo del tuo post<h5></h5>
+          <input id = "titleText" type = "text">
+          <h6>Scrivi il testo del tuo post</h6>
           <input id = "articleText" type = "text">
-          <input type= "date">
-        </p>
-        <button>
+          <h6>Seleziona la data</h6>
+          <input id = "dateText" type= "date">
           <input type = "submit">
-        </button>
-      </form>
-      
+        </form>
+      </div>
+
   </body>
 </html>
