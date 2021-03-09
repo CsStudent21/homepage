@@ -1,4 +1,4 @@
-/* The style of the blog form taken by Trivia exercise */
+
 #logo {
     border-radius: 50px;
 }
@@ -9,11 +9,16 @@ h1 {
     margin-left: 0.5rem;
 }
 
+/* The the class naming of the blog post taken by bootstrap */
+
 .blog-post{
     padding: 0.5rem;
     border: 0.5rem;
     margin: 0.5rem;
 }
+
+/* The style of the blog form taken by Trivia exercise and then personalized */
+
 button, input[type="submit"] {
     background-color: #d9edff;
     border: 1px solid transparent;
