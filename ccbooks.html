@@ -6,8 +6,11 @@
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <link href="ccbooks.css" rel="stylesheet">
+
         <script>
-          // My Code
+          document.addEventListener("DOMContentLoaded", function(){
+            document.querySelector("#read").innerHTML = "Read";
+          });
         </script>
 
         <title>My Webpage</title>
@@ -55,6 +58,7 @@
               <h5 class="card-title">The Innovator's Dilemma </h5>
               <p class="card-text">Clayton M. Christensen, 1997</p>
               <a href="https://www.amazon.com/Innovators-Dilemma-Technologies-Management-Innovation/dp/142219602X/" class="btn btn-primary">Buy it</a>
+              <button type="button" class="btn btn-success"><span id="read"></span></button>
             </div>
           </div>
 
