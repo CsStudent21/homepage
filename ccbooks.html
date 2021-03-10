@@ -9,7 +9,10 @@
 
         <script>
           document.addEventListener("DOMContentLoaded", function(){
-            document.querySelector("#read").innerHTML = "Read";
+            let x = document.querySelectorAll(".read")
+            for(let i = 0; i < x.length; i++ ){
+              x[i].innerHTML = `<button type="button" class="btn btn-success">Read</button>`
+            }
           });
         </script>
 
@@ -58,7 +61,7 @@
               <h5 class="card-title">The Innovator's Dilemma </h5>
               <p class="card-text">Clayton M. Christensen, 1997</p>
               <a href="https://www.amazon.com/Innovators-Dilemma-Technologies-Management-Innovation/dp/142219602X/" class="btn btn-primary">Buy it</a>
-              <button type="button" class="btn btn-success"><span id="read"></span></button>
+              <span class="read"></span>
             </div>
           </div>
 
@@ -68,6 +71,7 @@
               <h5 class="card-title">The Innovator's Solution </h5>
               <p class="card-text">Clayton M. Christensen, 2003</p>
               <a href="https://www.amazon.com/Innovators-Solution-Creating-Sustaining-Successful/dp/1422196577/" class="btn btn-primary">Buy it</a>
+              <span class="read"></span>
             </div>
           </div>
 
@@ -77,24 +81,25 @@
               <h5 class="card-title">How Will You Measure Your Life?</h5>
               <p class="card-text">Clayton M. Christensen, 2012</p>
               <a href="https://www.amazon.com/How-Will-Measure-Your-Life/dp/0062102419/" class="btn btn-primary">Buy it</a>
+              <span class="read"></span>
             </div>
           </div>
 
           <div class="card" style="width: 18rem;">
             <img src="ccbooks/cc004.jpg" id="bookImg" class="card-img-top" alt="The Innovator's Solution">
             <div class="card-body">
-              <h5 class="card-title">How Will You Measure Your Life?</h5>
-              <p class="card-text">Clayton M. Christensen, 2012</p>
-              <a href="https://www.amazon.com/How-Will-Measure-Your-Life/dp/0062102419/" class="btn btn-primary">Buy it</a>
+              <h5 class="card-title">Competing Against Luck?</h5>
+              <p class="card-text">Clayton M. Christensen, 2016</p>
+              <a href="https://www.amazon.com/Competing-Against-Luck-Innovation-Customer-ebook/dp/B01BBPZIHM/" class="btn btn-primary">Buy it</a>
             </div>
           </div>
 
           <div class="card" style="width: 18rem;">
             <img src="ccbooks/cc005.jpg" id="bookImg" class="card-img-top" alt="The Innovator's Solution">
             <div class="card-body">
-              <h5 class="card-title">How Will You Measure Your Life?</h5>
-              <p class="card-text">Clayton M. Christensen, 2012</p>
-              <a href="https://www.amazon.com/How-Will-Measure-Your-Life/dp/0062102419/" class="btn btn-primary">Buy it</a>
+              <h5 class="card-title">The Prosperity Paradox</h5>
+              <p class="card-text">Clayton M. Christensen, 2019</p>
+              <a href="https://www.amazon.com/Prosperity-Paradox-Innovation-Nations-Poverty/dp/0062946730/" class="btn btn-primary">Buy it</a>
             </div>
           </div>
 
