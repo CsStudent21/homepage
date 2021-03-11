@@ -3,7 +3,7 @@ function loadBAbooks(){
     let shelf = document.querySelector("#businessAnalyticsList");
     for(let i = 0; i < BAbooks.length; i++) {
         shelf.innerHTML += `<div class="card" style="width: 18rem;">
-                                <img src="${BAbooks[i].img}" class="card-img-top" alt="Book Cover">
+                                <img src="${BAbooks[i].img}" class="card-img-top" alt="${BAbooks[i].title}">
                                 <div class="card-body">
                                     <h5 class="card-title">${BAbooks[i].title}</h5>
                                     <p class="card-text">${BAbooks[i].text}</p>
@@ -31,7 +31,7 @@ function loadSbooks (){
     let shelf = document.querySelector("#strategyList");
     for(let i = 0; i < Sbooks.length; i++) {
         shelf.innerHTML += `<div class="card" style="width: 18rem;">
-                                <img src="${Sbooks[i].img}" class="card-img-top" alt="Book Cover">
+                                <img src="${Sbooks[i].img}" class="card-img-top" alt="${Sbooks[i].title}">
                                 <div class="card-body">
                                     <h5 class="card-title">${Sbooks[i].title}</h5>
                                     <p class="card-text">${Sbooks[i].text}</p>
@@ -73,7 +73,7 @@ function loadFbooks (){
     let shelf = document.querySelector("#financeList");
     for(let i = 0; i < Fbooks.length; i++) {
         shelf.innerHTML += `<div class="card" style="width: 18rem;">
-                                <img src="${Fbooks[i].img}" class="card-img-top" alt="Book Cover">
+                                <img src="${Fbooks[i].img}" class="card-img-top" alt="${Fbooks[i].title}">
                                 <div class="card-body">
                                     <h5 class="card-title">${Fbooks[i].title}</h5>
                                     <p class="card-text">${Fbooks[i].text}</p>
