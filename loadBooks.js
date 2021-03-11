@@ -2,7 +2,6 @@
 
 function loadBooks() {
     let library = document.querySelector("#readinglist");
-
     for (let i = 0; i < 100; i++) { // I upload my books
         library.innerHTML += `<div class="col-4 col-4 col-4">
                                 <div class="card" style="width: 18rem;">
